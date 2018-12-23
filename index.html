@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Panda Responsive Webpage</title>
+</head>
+<body>
+<nav>
+    <div class="logo">
+        <img src="img/logo2.png" alt="logo">
+    </div>
+
+    <a href="#" id="trigger">
+        <i class="fas fa-bars"></i>
+    </a>
+    
+    
+    <div id="mainNav">
+        <ul>
+            <li><a href="#">Tutorials</a></li>
+            <li><a href="#">About Me</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!--HERO SECTION-->
+<section id="hero">
+    <div class="hero-image">
+        <img src="img/panda1.jpg" alt="hero">
+    </div>
+</section>
+
+
+
+<!--GALLERY-->
+<section id="gallery">
+    <div class="card"><img src="img/p1.jpg" alt="p1"></div>
+    <div class="card"><img src="img/p2.jpg" alt="p2"></div>
+    <div class="card"><img src="img/p3.jpg" alt="p3"></div>
+    <div class="card"><img src="img/p4.jpg" alt="p4"></div>
+    <div class="card"><img src="img/p5.jpg" alt="p5"></div>
+</section>
+
+
+<footer>
+    Copyright &copy; 2018. All Rights Reserved.
+</footer>
+
+
+<script src="jquery.js"></script>
+<script>
+    $(document).ready(function () {
+        
+        if($(window).width() < 989)
+        {
+            $("#mainNav").hide();
+        }
+        if($(window).width() > 991)
+        {
+            $("#mainNav").show();
+        }
+        
+        window.onresize = function()
+        {
+            if($(window).width() < 989)
+            {
+                $("#mainNav").hide();
+            }
+            if($(window).width() > 991)
+            {
+                $("#mainNav").show();
+            }
+
+
+        }
+        
+        
+        
+        
+        
+        $("#trigger").click(function () {
+           $("#mainNav").slideToggle(600); 
+        });
+        
+        
+    });
+</script>
+</body>
+</html>

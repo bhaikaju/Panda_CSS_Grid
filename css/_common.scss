@@ -1,0 +1,26 @@
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+body {
+  height:100vh;
+  color:white;
+  font-size: 18px;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  white-space: nowrap;
+  font-weight: 400;
+}
+
+img {
+  width:100%;
+  display: block;
+}
